@@ -7,8 +7,18 @@
 \titlespacing{\section}{0pt}{\parskip}{-\parskip}
 \linespread{0.8}
 
-\titleformat{\section}
-  {\normalfont\fontsize{12}{15}\bfseries}{\thesection}{0.5em}{}
+\titleformat
+  {\section}
+  {\normalfont\fontsize{12}{15}\bfseries}
+  {\thesection}
+  {0.2em}
+  {}
+  [\hline\vspace{0.2em}]
+
+\newcommand
+  {\itemtitle}
+  [3]
+  {\noindent\textbf{#1}, #2\hfill\textit{#3}\\}
 
 \begin{document}
 
@@ -18,82 +28,70 @@
 
 \begin{center}
   \url{http://packlnd.github.io}\\
-  \vspace{0.20em}
+  \vspace{0.15em}
   \url{https://github.com/packlnd}\\
-  \vspace{0.20em}
+  \vspace{0.15em}
   \begin{tabular}{l r}
     patrikackland@gmail.com&(206) 890-8507
   \end{tabular} \\
-  \vspace{0.20em}
+  \vspace{0.15em}
   \textbf{Graduating in June 2017.}
 \end{center}
 
 \section*{Education}
-\hline
-\vspace{0.10em}
-\noindent\textbf{University of Washington}, Seattle, WA\hfill\textit{2015--(2016)}\\
+\itemtitle{KTH Royal Institute of Technology}{Stockholm, Sweden}{2015--(2017)}
+\indent-- \textbf{MS}, Computer Science.\\
+
+\itemtitle{University of Washington}{Seattle, WA}{2015--2016}
 \indent-- \textbf{Exchange}, Computer Science.\\
 \indent-- Highly competitive selection process. Only one student from my university admitted every year.\\
 
-\noindent\textbf{KTH Royal Institute of Technology}, Stockholm, Sweden\hfill\textit{2015--(2017)}\\
-\indent-- \textbf{MS}, Computer Science.\\
-
-\noindent\textbf{KTH Royal Institute of Technology}, Stockholm, Sweden\hfill\textit{2012--2015}\\
+\itemtitle{KTH Royal Institute of Technology}{Stockholm, Sweden}{2012--2015}
 \indent-- \textbf{BS}, Computer Science, GPA: 4.8/5.0.\\
 
 \section*{Experience}
-\hline
-\vspace{0.10em}
-\noindent\textbf{Yelp, Software Engineering Intern}, San Francisco, CA\hfill\textit{Summer 2016}\\
-\indent -- Full-stack development on the Yelp Reservations Diner team.\\
-\indent -- Launched www.yelp.com/reservations/{biz-alias}.\\
-\indent -- Highly visible changes exposed to thousands of users.\\
+\itemtitle{Yelp, Software Engineering Intern}{San Francisco, CA}{Summer 2016}
+\indent-- Full-stack development on the Yelp Reservations Diner team.\\
+\indent-- Launched \viterbi{www.yelp.com/reservations/\{biz-alias\}}.\\
+\indent-- Highly visible changes exposed to thousands of users.\\
 \indent Skills: Python, JavaScript\\
 
-\noindent\textbf{Scania, Software Engineering Intern}, Södertälje, Sweden\hfill\textit{Summer 2015}\\
+\itemtitle{Scania, Software Engineering Intern}{Södertälje, Sweden}{Summer 2015}
 \indent-- Continued developing project from the previous year.\\
 \indent-- Added several new features including digital envelope cryptography using open-ssl.\\
 \indent Skills: C, C++, Cryptography, MATLAB. \\
 
-\noindent\textbf{KTH Royal Institute of Technology, Teaching Assistant}, Stockholm, Sweden\hfill\textit{2013--2015}\\
+\itemtitle{KTH Royal Institute of Technology, Teaching Assistant}{Stockholm, Sweden}{2013--2015}
 \indent-- Teaching programming and algorithms to 15 computer-science students.\\
 \indent-- Grading weekly assignments and supervising month-long project at the end of the course. \\
 \indent Skills: Java, Go, Theoretical computer science. \\
 
-\noindent\textbf{Scania, Software Engineering Intern}, Södertälje, Sweden\hfill\textit{Summer 2014}\\
+\itemtitle{Scania, Software Engineering Intern}{Södertälje, Sweden}{Summer 2014}
 \indent-- Developed software for logging road and vehicle data in trucks.\\
 \indent-- The software replaced commercial software saving thousands of dollars.\\
 \indent Skills: C, C\#, Agile development.\\
 
 \section*{Projects\hfill {\normalsize\normalfont 15+ projects at \url{https://github.com/packlnd}}}
-\hline
-\vspace{0.10em}
-\noindent\textbf{Compiler in Scala}, project course\hfill\textit{Scala}\\
-\indent-- Compiles a subset of Scala to JVM bytecode.\\
+\itemtitle{Compiler in Scala}{project course}{Scala}
+\indent-- Compiles a subset of Scala to JVM bytecode and supports Java-like generics through type erasure.\\
 \indent-- Handwritten lexer, parser, name analyzer and type checker.\\
-\indent-- Supports Java-like generics through type erasure.\\
 
-\noindent\textbf{Floor lamp controller}, personal project\hfill\textit{Electrical Engineering, Python, Swift}\\
+\itemtitle{Floor lamp controller}{personal project}{Electrical Engineering, Python, Swift}
 \indent-- Controling my floor lamp through an iPhone app and a Raspberry Pi webserver.\\
 \indent-- Raspberry Pi is soldered to a wall socket remote which controls the lamp.\\
 
-\noindent\textbf{TourIt, HackTech 2016}, virtual reality project from hackathon\hfill \textit{Python, Virtual Reality, Unity} \\
-\indent-- AirBnB like virtual reality tour guide website.\\
-\indent-- Match up with locals that give you an audio tour of their city.\\
+\itemtitle{TourIt, HackTech 2016}{virtual reality project from hackathon}{Python, Virtual Reality, Unity}
+\indent-- AirBnB-like virtual reality tour guide website, matches tourists with locals that give an audio tour of their city.\\
 \indent-- Uses Oculus Rift and 360 degrees photosphere images to make it seem like you are there.\\
 
-\noindent\textbf{Picture-of-pictures}, personal project\hfill \textit{Ruby, JavaScript} \\
+\itemtitle{Picture-of-pictures}{personal project}{Ruby, JavaScript}
 \indent-- Replaces each pixel in an image with an image whose dominant color is closest to the color of the pixel.\\
 \indent-- Choosing better data structures reduced running time by 90\%. \\
 
 \section*{Programming}
-\hline
-\vspace{0.10em}
 \indent Main: \textbf{Java (6 years)}, \textbf{Python (2 years)}, \textbf{C++ (2 years)}\hspace{2em} Other: Android, JavaScript, Scala, Ruby, C\#, Go\\
 
 \section*{Leadership Experience}
-\hline
-\vspace{0.10em}
 \noindent\textbf{Head of Sponsor, International Reception, KTH}\hfill\textit{2014--2014} \\
 \indent-- Spent six months together with 13 other students planning the international reception.\\
 \indent-- Welcomed over 2000 students during four arrival days and planned a month of activities. \\
@@ -103,8 +101,6 @@
 \indent-- Meetings with students and faculty to discuss courses and the computer science department.\\
 
 \section*{Awards}
-\hline
-\vspace{0.10em}
 \textbf{Henrik Göransson Sandviken Scholarship}\hfill\textit{2015}\\
 \indent-- Awarded scholarship for academic achievements at KTH Royal Institute of Technology.\\
 \indent-- Selection based on GPA. Awarded to 90 students in total from all majors at the university.\\
